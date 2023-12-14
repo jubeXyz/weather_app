@@ -28,7 +28,13 @@ import 'package:flutter/material.dart';
      return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Wetter-App"),
+          "Superkalifragilistikexpialigetische Wetter-App",
+          style: TextStyle(
+            color: Colors.green,
+            fontWeight: FontWeight.bold,
+            fontSize: 14,
+            ),
+        ),
       ),
       body: Container(
         child: const Center(
@@ -36,24 +42,26 @@ import 'package:flutter/material.dart';
             mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text(
-            "Stadt",
+            "Hamburg",
+            style: TextStyle(
+          color: Colors.blue,
+          fontSize: 42,
+          fontWeight: FontWeight.bold,
+          ),
+          ),
+          Text(
+            "4°C",
             style: TextStyle(
           color: Colors.blue,
           fontSize: 24,
           ),
           ),
           Text(
-            "Temperatur",
+            "Regnerisch",
             style: TextStyle(
           color: Colors.blue,
           fontSize: 24,
-          ),
-          ),
-          Text(
-            "Wetter",
-            style: TextStyle(
-          color: Colors.blue,
-          fontSize: 24,
+          fontWeight: FontWeight.w200,
           ),
           ),
         ],
