@@ -26,7 +26,7 @@ import 'package:flutter/material.dart';
    @override
    Widget build(BuildContext context) {
      return Scaffold(
-      appBar: AppBar(backgroundColor: Color.fromARGB(255, 241, 140, 45),
+      appBar: AppBar(backgroundColor: Color.fromARGB(255, 241, 158, 62),
         title: const Text(
           "Superkalifragilistikexpialigetische \n Wetter-App",
           textAlign: TextAlign.center,
@@ -38,36 +38,42 @@ import 'package:flutter/material.dart';
         ),
       ),
       body: Container(
-        color: Color.fromARGB(255, 8, 72, 125),
+        decoration: const BoxDecoration(
+          image:DecorationImage(
+            image: AssetImage('/Users/julibebensee/Code/weather_app/lib/assets/aiclouds_soft_colors.jpg'),
+            fit:BoxFit.cover,
+          ),
+        ),
         child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.wb_cloudy_outlined,
-          color: Colors.white,
+          Icon(Icons.wb_cloudy,
+          color: Color.fromARGB(255, 27, 103, 158),
           size: 90,
           ),
           Text(
             "Hamburg",
             style: TextStyle(
-          color: Color.fromARGB(255, 241, 140, 45),
-          fontSize: 42,
+          color: Color.fromARGB(255, 15, 107, 137),
+          fontSize: 48,
           fontWeight: FontWeight.bold,
           ),
           ),
           Text(
             "4°C",
             style: TextStyle(
-          color: Colors.white,
-          fontSize: 24,
+          color: Color.fromARGB(255, 28, 98, 173),
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
           ),
           ),
           Text(
             "Bewölkt",
             style: TextStyle(
-          color: Colors.white,
+          color: Color.fromARGB(255, 142, 65, 15),
           fontSize: 24,
-          fontWeight: FontWeight.w200,
+          fontWeight: FontWeight.w400,
           ),
           ),
         ],
