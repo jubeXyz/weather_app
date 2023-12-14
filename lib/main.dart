@@ -26,25 +26,31 @@ import 'package:flutter/material.dart';
    @override
    Widget build(BuildContext context) {
      return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar(backgroundColor: Color.fromARGB(255, 241, 140, 45),
         title: const Text(
-          "Superkalifragilistikexpialigetische Wetter-App",
+          "Superkalifragilistikexpialigetische \n Wetter-App",
+          textAlign: TextAlign.center,
           style: TextStyle(
-            color: Colors.green,
+            color: Color.fromARGB(255,8,72,125),
             fontWeight: FontWeight.bold,
             fontSize: 14,
             ),
         ),
       ),
       body: Container(
+        color: Color.fromARGB(255, 8, 72, 125),
         child: const Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
         children: [
+          Icon(Icons.wb_cloudy_outlined,
+          color: Colors.white,
+          size: 90,
+          ),
           Text(
             "Hamburg",
             style: TextStyle(
-          color: Colors.blue,
+          color: Color.fromARGB(255, 241, 140, 45),
           fontSize: 42,
           fontWeight: FontWeight.bold,
           ),
@@ -52,14 +58,14 @@ import 'package:flutter/material.dart';
           Text(
             "4°C",
             style: TextStyle(
-          color: Colors.blue,
+          color: Colors.white,
           fontSize: 24,
           ),
           ),
           Text(
-            "Regnerisch",
+            "Bewölkt",
             style: TextStyle(
-          color: Colors.blue,
+          color: Colors.white,
           fontSize: 24,
           fontWeight: FontWeight.w200,
           ),
